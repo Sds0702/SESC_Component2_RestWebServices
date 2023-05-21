@@ -1,0 +1,48 @@
+version: '2'
+
+#networks:
+# default:
+# external: true
+# name: student_default
+
+services:
+  restapp:
+    image: samseq96/rest:sesc
+    restart: always
+#environment:
+#spring.datasource.url: jdbc:postgresql://studentdb:5432/student
+#spring.datasource.username: postgres
+#spring.datasource.password: password
+    ports:
+      - "8080:8080"
+    expose:
+      - "8080"
+# depends_on:
+# studentdb:
+# condition: service_healthy
+    networks:
+      - default
+
+
+
+
+
+
+
+
+
+
+
+#version: '2'
+#
+#services:
+#  frontend:
+#    image: samantha
+#    ports:
+#      - "8080:8080"
+#    networks:
+#      - front-tier
+#
+#networks:
+#  front-tier: {}
+
