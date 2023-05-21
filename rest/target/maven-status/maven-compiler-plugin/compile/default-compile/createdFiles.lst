@@ -1,0 +1,3 @@
+com\user\rest\model\UserDetails.class
+com\user\rest\controller\UserDetailsContoller.class
+com\user\rest\RestAPIApplication.class
